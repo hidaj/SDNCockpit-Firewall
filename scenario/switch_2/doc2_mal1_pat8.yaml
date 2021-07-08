@@ -1,0 +1,113 @@
+# do not change this
+root:
+
+  # the name of the scenario
+  name: "iotSecurity"
+
+  # a short description that can be printed to console
+  description: "Protect the iot network from unwanted access"
+
+  # link to a pdf with a more detailed description (if available)
+  pdf: "./security.pdf"
+
+  # working directory for this scenario
+  working_directory: "cwd/security1"
+
+  # specify the topology of the scenario
+  topology:
+
+    # the switches of the topology
+    switches:
+      - name: s1
+        dpid: 1
+        enabled: True
+      - name: s2
+        dpid: 2
+        enabled: True  
+    hosts:
+      - name: doc1
+        ip: "21.0.0.1/8"
+      - name: doc2
+        ip: "21.0.0.2/8"
+      - name: mal
+        ip: "31.0.0.1/8"
+      - name: pat1
+        ip: "11.0.0.1/8"
+      - name: pat2
+        ip: "11.0.0.2/8"
+      - name: pat3
+        ip: "11.0.0.3/8"
+      - name: pat4
+        ip: "11.0.0.4/8"
+      - name: pat5
+        ip: "11.0.0.5/8"
+      - name: pat6
+        ip: "11.0.0.6/8"
+      - name: pat7
+        ip: "11.0.0.7/8"
+      - name: pat8
+        ip: "11.0.0.8/8"
+    links:   
+      - [s1, pat1, 1000]
+      - [s1, pat2, 1000]
+      - [s1, pat3, 1000]
+      - [s1, pat4, 1000]
+      - [s1, pat5, 1000]
+      - [s1, pat6, 1000]
+      - [s1, pat7, 1000]
+      - [s1, pat8, 1000]
+      - [s1, s2, 100]
+      - [s2, doc1, 1000]
+      - [s2, doc2, 1000]
+      - [s2, mal, 1000]   
+
+  networks:
+    - name: "s1"
+      alias: "Patient_network"
+    - name: "s2"
+      alias: "Doctor_network"
+        
+  # traffic generation
+  traffic:
+    # specify all the profiles that should be used (in parallel!)
+    use_profiles:
+      - default
+
+  # specify traffic profiles for this scenario
+  traffic_profiles:
+    #  the default profile
+    - name: default
+      # estimated runtime in seconds of this schedule in seconds
+      runtime: 1
+      # grace time in seconds before performing a traffic analysis
+      wait_for_analaysis: 3
+      # automatically create the schedule with the parameters specified
+      type: auto
+      # evaluation schema: strict, progressive or disregard
+      evaluation: strict
+      # specify the parameters for the schedule
+      params:
+        # generate x events in total
+        events: 20
+        # randomly select time range for a event between [a,b]
+        time_range: [1,10]
+        # randomly select the amount of packets from the given array
+        choice_packets: [1000]
+        # randomly select a inter arrival time from the given array
+        choice_iat: ["1us"]
+        # randomly select a priority from the given array
+        choice_priority: [1]
+
+  # more advanced traffic generation parameters
+  trafgen:
+
+    # Specifies the (random) ips that are used in the traffic generator.
+    # This is required for setting up the network oracle in
+    # the controller. The file is stored in the working directory of the
+    # scenario so this can be the same for all scenarios (no need to change).
+    deployment_file: "oracle/deployment.yaml"
+
+    # Artifical delay for udp streams. The first packet is
+    # sent immediatly and all other packets are sent after a timeout
+    # that can be specified with this variable.
+    udp_first_packet_delay: 0.5
