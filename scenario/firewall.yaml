@@ -1,0 +1,22 @@
+task:
+  name: "Secure Medical IOT Gateway"
+  description: >
+    Implement the following rules:
+    1. Patient Network (L1) may exchange
+    packets with Doctor Network (H1)
+    
+    2. Patient Records (R1) may exchange
+    packets with Doctor Network (H1)
+    
+    3. Noone from these three networks (L1,R1,H1)
+    may send packets to Public Network Access (M1).
+    
+    4. Patient Network (L1) and Patient Records
+    (R1) may not exchange packets.
+  scenario: "firewall"
+  graph: |
+    [S1] -- { start: east}  [H1] { origin: S1; offset: 2,0; }
+    [S1] -- { start: north} [L1] { origin: S1; offset: 0,-2; }
+    [S1] -- { start: west}  [R1] { origin: S1; offset: -2,0; }
+    [S1] -- { start: south} [M1] { origin: S1; offset: 0,2; }
+  examination: 1
