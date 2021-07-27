@@ -110,8 +110,8 @@ Repository Structure
  	firewall.yaml (recent firewall scenario)
 
 - Readme_Images
- 	firewallConnectivity.jpg
- 	networkTopology.jpg
+ 	- firewallConnectivity.jpg
+ 	- networkTopology.jpg
 
 
 
