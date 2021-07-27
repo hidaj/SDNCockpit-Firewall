@@ -57,8 +57,15 @@ however this is a demonstration of the firewall, further aspects are
 discussed in the repository.
 
 Evaluation Plan
+- To test the effectiveness of the solution I will be generating traffic within 
+the network utilising the firewall scenario to see if the flow roles are 
+implemented and correct traffic dropped.
 
+- After instantiating my configured firewall application utilise the 
+pingall command to compare against the expected network connectivity.
 
+- Finally iperf will be utilised to measure the tcp bandwidth 
+of the connected networks.  
 
 Repository Structure
 
