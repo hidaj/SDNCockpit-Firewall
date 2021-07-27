@@ -25,18 +25,31 @@ Network Topology
 I have defined a network to demonstrate my Firewall solution.
 There is a single switch connecting four networks, as demonstrated below
 
-
 - s1 represents Switch 1
 - h1 represents the Doctor Network.
 - l1 represents the Patient Network.
 - r1 represents the network hosting Patient Records.
 - m1 represents a Public Access Point for patients and visitors.
 
-
-
 Attack Type
+Firewalls can be utilised to protect a network from network-based 
+security threats. This firewall implementation prevents the delivery
+of packets to hosts attempting to exchange packets in a non-white 
+listed method as defined by the RYU controllers flow roles. 
 
+A firewall limits the capability and scope of a malicious actor’s attack
+vector by creating rules governing the interconnectivity of devices 
+connected to the business network depending on the hosts network. 
+In the example developed in this repository the firewall application:
 
+- Traffic from Doctor Network (h1) hosts may be exchanged with Patient 
+Record Network (r1) hosts.
+- Traffic from Doctor Network  (h1) hosts may be exchanged with Patient
+Network (l1) hosts.
+- Traffic from Patient Network (l1) hosts may  not be exchanged with the
+Patient Record Network (r1) hosts.
+- Traffic generated from Patient Network Public Access Network (m1) hosts
+- may not be exchanged with hosts from the three other networks (h1,l1,r1).
 
 Proposed Solution
 I have implemented a Packet-filtering firewall, utilising flow roles in the RYU 
