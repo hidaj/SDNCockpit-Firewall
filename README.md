@@ -86,9 +86,8 @@ Repository Structure
  	- Cockpit.py
  	- Configured.py (The configured firewall developed)
  	- Unconfigured.py (No flow roles instantiated)
- 
-  
-- Guides
+ 	- 
+ 	- - Guides
  	- 1_SDNCockpitInstallManual.pdf (Instructions from the original repo)
  	- 2_SDNCockpitProjectLaunchGuide.pdf (How to launch the firewall guide)
  	- 3_ProjectFileLocations.pdf (Where to place the firewall files)
