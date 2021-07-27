@@ -81,5 +81,37 @@ pingall command to compare against the expected network connectivity.
 of the connected networks.  
 
 Repository Structure
+- Application
+ 	/Dev– wip dev, future  etc
+ 	Cockpit.py
+ 	Configured.py (The configured firewall developed)
+ 	Unconfigured.py (No flow roles instantiated)
+
+- Guides
+ 	1_SDNCockpitInstallManual.pdf (Instructions from the original repo)
+ 	2_SDNCockpitProjectLaunchGuide.pdf (How to launch the firewall guide)
+ 	3_ProjectFileLocations.pdf (Where to place the firewall files)
+
+- Results
+ 	Performance_Tests.pdf  (iperf test results on configured firewall network)
+ 	Results.pdf  (scenario results - configured.py and unconfigured.py)
+
+- Scenario
+ 	/futuredev  (Future development plans)
+ 	/testbed  (firewall development)
+ 	firewall.yaml  (recent firewall scenario)
+
+- SolutionAnalysis
+ 	Improvements&FurtherDevelopments (implementation analysed)
+
+
+- Task
+ 	/dev ( firewall scenario development folder)
+ 	firewall.yaml (recent firewall scenario)
+
+- Readme_Images
+ 	firewallConnectivity.jpg
+ 	networkTopology.jpg
+
 
 
