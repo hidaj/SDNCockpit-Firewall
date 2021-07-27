@@ -5,8 +5,8 @@ Project Scenario
 
 
 A healthcare centre would like to implement IoT devices into their patient 
-monitoring infrastructure as an RFID based patient chart due to the inexpensive 
-nature and speed of deployment, they are keen to implement. 
+monitoring infrastructure as an RFID based patient chart due 
+to the inexpensive nature and speed of deployment, they are keen to implement. 
 
 However there have been concerns deploying such devices due to issues 
 concerning security, data protection, service continuity and monitoring.
