@@ -2,8 +2,6 @@ Utilising an SDN to Secure an IOT network in a Medical Setting
 CSC7078_KevinBrolly_40313770
 
 Project Scenario
-
-
 A healthcare centre would like to implement IoT devices into their patient 
 monitoring infrastructure as an RFID based patient chart due 
 to the inexpensive nature and speed of deployment, they are keen to implement. 
@@ -24,7 +22,6 @@ centres business network, affecting service and potentially
 compromising patient information and safety.
 
 Network Topology
-
 I have defined a network to demonstrate my Firewall solution.
 There is a single switch connecting four networks, as demonstrated below
 
@@ -42,8 +39,22 @@ Attack Type
 
 
 Proposed Solution
+I have implemented a Packet-filtering firewall, utilising flow roles in the RYU 
+controller to filter packets based on their ip source and destination. 
+Any inbound packets that do not meet the criteria of the flow roles are dropped,
+I have developed a whitelist effectively by defining the allowed traffic
 
+A benefit of using such an implementation is that it is not resource intensive 
+and should have a low impact on system performance an important factor when 
+considering the scalability of IoT devices.
 
+This firewall is stateless, only analysing packets in isolation, 
+impacting the overall level of protection it can provide as vulnerabilities 
+may be exploited to bypass these conditions. 
+
+Ideally a multi-layered approach to network security would be implemented,
+however this is a demonstration of the firewall, further aspects are 
+discussed in the repository.
 
 Evaluation Plan
 
