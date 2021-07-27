@@ -17,13 +17,23 @@ Areas of concern utilising IOT devices includes:
 - Device specification limits inbuilt security measures. 
 - Issues of maintainability. 
 - Due to the inexpensive nature the number of devices 
-- can exponentially grow quickly.
+- Can exponentially grow quickly.
 
 These issues provide malicious actors attack vectors to the health 
 centres business network, affecting service and potentially 
 compromising patient information and safety.
 
-Network topology
+Network Topology
+
+I have defined a network to demonstrate my Firewall solution.
+There is a single switch connecting four networks, as demonstrated below
+
+
+s1 represents Switch 1
+h1 represents the Doctor Network.
+l1 represents the Patient Network.
+r1 represents the network hosting Patient Records.
+m1 represents a Public Access Point for patients and visitors.
 
 
 
