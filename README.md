@@ -29,11 +29,11 @@ I have defined a network to demonstrate my Firewall solution.
 There is a single switch connecting four networks, as demonstrated below
 
 
-s1 represents Switch 1
-h1 represents the Doctor Network.
-l1 represents the Patient Network.
-r1 represents the network hosting Patient Records.
-m1 represents a Public Access Point for patients and visitors.
+- s1 represents Switch 1
+- h1 represents the Doctor Network.
+- l1 represents the Patient Network.
+- r1 represents the network hosting Patient Records.
+- m1 represents a Public Access Point for patients and visitors.
 
 
 
