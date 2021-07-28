@@ -106,7 +106,7 @@ Repository Structure:
 - [Task](Scenario/ "Link to task folder")
  	/dev ( firewall scenario development folder)
  	firewall.yaml (recent firewall scenario)
-- [Readme_Images](Readme_Images/ "Link to readme image folder")
+- [Readme_Images](readme_Images/ "Link to readme image folder")
  	- firewallConnectivity.jpg
  	- networkTopology.jpg
 
