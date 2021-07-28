@@ -1,7 +1,7 @@
-
 **Securing a Proposed IoT network integrated into a Medical Setting**
 
-Project Scenario
+**Project Scenario**
+
 A healthcare centre would like to implement IoT devices into their patient 
 monitoring infrastructure as an RFID based patient chart due 
 to the inexpensive nature and speed of deployment, they are keen to implement. 
@@ -21,7 +21,8 @@ These issues provide malicious actors attack vectors to the health
 centres business network, affecting service and potentially 
 compromising patient information and safety.
 
-Network Topology
+**Network Topology**
+
 I have defined a network to demonstrate my Firewall solution.
 There is a single switch connecting four networks, as demonstrated in the image 
 below
@@ -34,7 +35,8 @@ below
 - r1 represents the network hosting Patient Records.
 - m1 represents a Public Access Point for patients and visitors.
 
-Attack Type
+**Attack Type**
+
 Firewalls can be utilised to protect a network from network-based 
 security threats. This firewall implementation prevents the delivery
 of packets to hosts attempting to exchange packets in a non-white 
@@ -54,7 +56,8 @@ Patient Record Network (r1) hosts.
 - Traffic generated from Patient Network Public Access Network (m1) hosts
 - may not be exchanged with hosts from the three other networks (h1,l1,r1).
 
-Proposed Solution
+**Proposed Solution**
+
 I have implemented a Packet-filtering firewall, utilising flow roles in the RYU 
 controller to filter packets based on their ip source and destination. 
 Any inbound packets that do not meet the criteria of the flow roles are dropped,
@@ -72,7 +75,8 @@ Ideally a multi-layered approach to network security would be implemented,
 however this is a demonstration of the firewall, further aspects are 
 discussed in the repository.
 
-Evaluation Plan
+**Evaluation Plan**
+
 - To test the effectiveness of the solution I will be generating traffic within 
 the network utilising the firewall scenario to see if the flow roles are 
 implemented and correct traffic dropped.
@@ -84,7 +88,9 @@ pingall command to compare against the expected network connectivity.
 - Finally iperf will be utilised to measure the tcp bandwidth 
 of the connected networks.  
 
-Repository Structure:
+**Repository Structure:**
+
+
 - [Application](Application/ "Link to application folder")
  	- /Dev (wip)
  	- Cockpit.py
