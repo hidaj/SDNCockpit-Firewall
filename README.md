@@ -58,7 +58,7 @@ Proposed Solution
 I have implemented a Packet-filtering firewall, utilising flow roles in the RYU 
 controller to filter packets based on their ip source and destination. 
 Any inbound packets that do not meet the criteria of the flow roles are dropped,
-I have developed a whitelist effectively by defining the allowed traffic
+I have developed a whitelist defining allowed traffic.
 
 A benefit of using such an implementation is that it is not resource intensive 
 and should have a low impact on system performance an important factor when 
@@ -75,7 +75,8 @@ discussed in the repository.
 Evaluation Plan
 - To test the effectiveness of the solution I will be generating traffic within 
 the network utilising the firewall scenario to see if the flow roles are 
-implemented and correct traffic dropped.
+implemented and correct traffic dropped. As depicted below:
+![Alt text](readme_Images/firewallConnectivity.jpg "project network connectivity")
 
 - After instantiating my configured firewall application utilise the 
 pingall command to compare against the expected network connectivity.
