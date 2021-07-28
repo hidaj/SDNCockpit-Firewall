@@ -93,7 +93,7 @@ Repository Structure:
 - [Guides](Guides/ "Link to guide folder")
  	- 1_SDNCockpitInstallManual.pdf (Instructions from the original repo)
  	- 2_SDNCockpitProjectLaunchGuide.pdf [launching this solution](Guides/2_SDNCockpitProjectLaunchGuide.pdf "How to launch this project")
- 	- 3_ProjectFileLocations.pdf (Where to place the firewall files)[firewall scenario](Scenario/firewall.yaml "Link to firewall scenario code")
+ 	- 3_ProjectFileLocations.pdf [Where to place the firewall files](Guides/3_ProjectFileLocations.pdf "Where to place project files")
 - [Results](Results/ "Link to results folder")
  	- Performance_Tests.pdf  (iperf test results on configured firewall network)
  	- Results.pdf  (scenario results - configured.py and unconfigured.py)
