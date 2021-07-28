@@ -104,8 +104,8 @@ Repository Structure:
 - [SolutionAnalysis](SolutionAnalysis/ "Link to solution analysis folder")
  	- Improvements&FurtherDevelopments (implementation analysed)
 - [Task](Scenario/ "Link to task folder")
- 	/dev ( firewall scenario development folder)
- 	firewall.yaml (recent firewall scenario)
+ 	- /dev ( firewall scenario development folder)
+ 	- firewall.yaml (recent firewall scenario)
 - [Readme_Images](readme_Images/ "Link to readme image folder")
  	- firewallConnectivity.jpg
  	- networkTopology.jpg
