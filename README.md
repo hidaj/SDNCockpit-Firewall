@@ -75,7 +75,7 @@ discussed in the repository.
 Evaluation Plan
 - To test the effectiveness of the solution I will be generating traffic within 
 the network utilising the firewall scenario to see if the flow roles are 
-implemented and correct traffic dropped. As depicted below:
+implemented and correct traffic dropped.
 ![Alt text](readme_Images/firewallConnectivity.jpg "project network connectivity")
 
 - After instantiating my configured firewall application utilise the 
