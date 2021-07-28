@@ -86,26 +86,26 @@ of the connected networks.
 
 Repository Structure:
 - [Application](Application/ "Link to application folder")
- 	- /Dev– wip dev, future  etc
+ 	- /Dev (wip)
  	- Cockpit.py
- 	- Configured.py (The configured firewall developed)
+ 	- Configured.py : [Controller firewall application](Application/configured.py " RYU controller application")
  	- Unconfigured.py (No flow roles instantiated)
 - [Guides](Guides/ "Link to guide folder")
  	- 1_SDNCockpitInstallManual.pdf (Instructions from the original repo)
  	- 2_SDNCockpitProjectLaunchGuide.pdf : [launching this solution](Guides/2_SDNCockpitProjectLaunchGuide.pdf "How to launch this project")
  	- 3_ProjectFileLocations.pdf : [Where to place the firewall files](Guides/3_ProjectFileLocations.pdf "Where to place project files")
 - [Results](Results/ "Link to results folder")
- 	- Performance_Tests.pdf  (iperf test results on configured firewall network) [iperf tests](Results/Performance_Tests.pdf "Performance results")
- 	- Results.pdf  (scenario results - configured.py and unconfigured.py) [Networks connectivity test results](Results/Results.pdf "scenario results - configured.py - unconfigured.py")
+ 	- Performance_Tests.pdf : [iperf tests](Results/Performance_Tests.pdf "Performance results")
+ 	- Results.pdf   : [Networks connectivity test results](Results/Results.pdf "scenario results - configured.py - unconfigured.py")
 - [Scenario](Scenario/ "Link to scenario folder")
  	- /futuredev  (Future development plans)
  	- /testbed  (firewall development)
- 	- firewall.yaml  [firewall scenario](Scenario/firewall.yaml "Link to firewall scenario code")
+ 	- firewall.yaml  : [firewall scenario](Scenario/firewall.yaml "Link to firewall scenario code")
 - [SolutionAnalysis](SolutionAnalysis/ "Link to solution analysis folder")
- 	- Improvements&FurtherDevelopments (implementation analysed)
-- [Task](Scenario/ "Link to task folder")
+ 	- Improvements&FurtherDevelopments : [implementation analysis](SolutionAnalysis/Improvements&FurtherDevelopments.pdf "implementation analysed")
+- [Task](Task/ "Link to task folder")
  	- /dev ( firewall scenario development folder)
- 	- firewall.yaml (recent firewall scenario)
+ 	- firewall.yaml : [project firewall scenario](Task/firewall.yaml "implementation analysed")
 - [Readme_Images](readme_Images/ "Link to readme image folder")
  	- firewallConnectivity.jpg
  	- networkTopology.jpg
