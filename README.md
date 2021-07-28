@@ -23,8 +23,10 @@ compromising patient information and safety.
 
 Network Topology
 I have defined a network to demonstrate my Firewall solution.
-There is a single switch connecting four networks, as demonstrated below
+There is a single switch connecting four networks, as demonstrated in the image 
+below
 ![Alt text](readme_Images/networkTopology.jpg "project network topology")
+
 
 - s1 represents Switch 1
 - h1 represents the Doctor Network.
