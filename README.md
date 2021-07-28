@@ -1,5 +1,5 @@
-**Utilising an SDN to Secure an IOT network in a Medical Setting **
-CSC7078_KevinBrolly_40313770
+
+**Securing a Proposed IoT network integrated into a Medical Setting**
 
 Project Scenario
 A healthcare centre would like to implement IoT devices into their patient 
